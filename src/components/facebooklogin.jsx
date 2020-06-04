@@ -3,7 +3,7 @@ import FacebookLogin from 'react-facebook-login';
 import { facebookAppId } from '../data/data.json';
 import './facebooklogin.css';
 
-const SignInButton = ({ auth, setName, setAuth, setPicture, name, picture }) => {
+const Facebook = ({ auth, setName, setAuth, setPicture, name, picture }) => {
     const componentClicked = () => {
         console.log('Component Clicked');
     };
@@ -39,4 +39,4 @@ const SignInButton = ({ auth, setName, setAuth, setPicture, name, picture }) => 
     return <>{facebookData}</>;
 };
 
-export default SignInButton;
+export default Facebook;

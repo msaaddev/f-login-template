@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Facebooklogin from './components/facebooklogin';
+import Facebook from './components/facebooklogin';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
     return (
         <div className='container'>
-            <Facebooklogin
+            <Facebook
                 auth={auth}
                 setAuth={setAuth}
                 setName={setName}
