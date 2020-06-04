@@ -1,13 +1,22 @@
-import React from 'react';
-import SignInButton from './components/signinbutton';
-import { facebook, google } from './data/data.json';
+import React, { useState } from 'react';
+import Facebooklogin from './components/facebooklogin';
 import './App.css';
 
 function App() {
+    const [auth, setAuth] = useState(false);
+    const [name, setName] = useState('');
+    const [picture, setPicture] = useState('');
+
     return (
         <div className='container'>
-            <SignInButton text={facebook} />
-            <SignInButton text={google} />
+            <Facebooklogin
+                auth={auth}
+                setAuth={setAuth}
+                setName={setName}
+                setPicture={setPicture}
+                name={name}
+                picture={picture}
+            />
         </div>
     );
 }
